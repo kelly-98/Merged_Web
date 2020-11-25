@@ -90,7 +90,7 @@ h3{
     transition: all .5s;
 }
 
-.carousel-indicators .active{
+.carousel-indicators--config .active{
     background-color: white;
 }
 
@@ -201,15 +201,21 @@ h3{
 
 .serives-item-style{
     background-color: #f97c69;
+    transition: all 0.5s;
 }
 
 .serives-item-nonestyle{
     background-color: white;
     color: black;
+    transition: all 0.5s;
 }
 
 .serives-item-nonestyle i{
     color: #f97c69;
+}
+
+.services-item:hover{
+    opacity: 0.5;
 }
 
 .services-item i{
@@ -221,6 +227,119 @@ h3{
     padding: 15px 0 15px;
 }
 
+/* FEEDBACK */
+.feedback-item{
+    padding: 0 20px;
+}
+
+.feedback-item h2{
+    margin: 15px 0;
+    font-size: 25px;
+    transition: all .5s;
+}
+
+.feedback-item img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 6px solid #7f67f8;
+    transition: all .5s;
+}
+
+.feedback-item:hover img{
+    border-color: #f97c69;
+}
+
+.feedback-item:hover h2{
+    color: #f97c69;
+}
+
+.carousel-indicators--feedback li{
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    background-color: #f97c69;
+    opacity: 0.5;
+}
+
+.carousel-indicators--feedback .active{
+    opacity: 1;
+}
+
+
+/* FOOTER */
+.footer{
+    background-color: #0b0c11;
+    color: #a5a5a6;
+}
+
+.footer-item h2{
+    color: #f97c69;
+}
+
+.footer-item1{
+    margin: 0 40px;
+}
+
+.footer-input input{
+    border-radius: 0;
+    border: 0;
+}
+
+.footer-input span{
+    color: white;
+    background-color: #7f67f8;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.footer-input span:hover{ 
+    background-color: #f97c69;
+}
+
+.footer-item a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer-item a:hover{
+    color: #f97c69;
+}
+
+.footer-contact p{
+    margin-bottom: 20px;
+}
+
+.footer-contact p i{
+    color: #f97c69;
+    margin-right: 10px;
+}
+
+.coppyright{
+    background-color: #252525;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* BACK TO TOP */
+.back-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+    
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top :hover{
+    opacity: 0.5;
+}
 
 @media screen and (max-width:576px){
     .header-left{
@@ -265,6 +384,8 @@ h3{
         height: 40rem;
     }
 
+    
+
 }
 
 @media screen and (max-width:768px){
@@ -297,6 +418,31 @@ h3{
 
     .services h2{
         font-size: 25px;
+    }
+
+    .feedback-item{
+        padding: 20px 0;
+    }
+
+
+    .footer-item{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #363d41;
+    }
+
+    .footer-item h2{
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .footer-item{
+        margin-bottom: 20px;
+    }
+
+    .footer-item a{
+        display: inline;
+        margin: 0 10px;
     }
 
 }
